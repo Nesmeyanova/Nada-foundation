@@ -1,0 +1,38 @@
+.table {
+    width: 245px;
+    position: relative;
+    padding-left: 45px;
+
+    &::before {
+        content: "";
+        width: 40px;
+        height: 40px;
+        border: 3px solid #E0E0E0;
+        border-radius: 50%;
+        background-color: #FFFFFF;
+        position: absolute;
+        top: 3px;
+        left: 0px;
+    }
+}
+
+.table__title {
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    text-transform: lowercase;
+    color: #7D7D7D;
+}
+
+.table__main {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 20px;
+    color: #7D7D7D;
+    vertical-align: top;
+}
+
+.table__have {
+    color: #8DCA78;
+}

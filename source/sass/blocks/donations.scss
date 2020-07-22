@@ -1,0 +1,154 @@
+.donations {
+    background-color: #005EF3;
+    color: #FFFFFF;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    padding-top: 60px;
+}
+
+.donations__wrapper {
+    @media (min-width: $desktop-width) {
+        display: flex;
+    }
+}
+
+.donations__wrapper-left {
+    @media (min-width: $desktop-width) {
+        margin-right: 160px;
+    }
+}
+
+.donations__wrapper-right {
+    @media (min-width: $tablet-width) {
+        margin-left: auto;
+    }
+}
+
+.donations__title {
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 40px;
+    }
+}
+
+.donations__list {
+    @include reset-list;
+    display: flex;
+    position: relative;
+
+    @media (min-width: $tablet-width) {
+        margin-bottom: 45px;
+    }
+
+    @media (min-width: $desktop-width) {
+        flex-direction: column;
+    }
+
+    &::after {
+        content: "";
+        width: 16px;
+        height: 32px;
+        background-image: url(../img/pointer.svg);
+
+        @media (min-width: $tablet-width) {
+            position: absolute;
+            top: 13px;
+            right: 0px;
+        }
+
+        @media (min-width: $desktop-width) {
+            transform: rotate(90deg);
+            top: 220px;
+            right: 115px;
+        }
+    }
+}
+
+.donations__item {
+    font-family: "Roboto", "Arial", sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.3);
+    margin: 0;
+    margin-left: 19px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 50px;
+        line-height: 60px;
+        margin-left: 100px;
+    }
+
+    @media (min-width: $desktop-width) {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+}
+
+.donations__item:first-child {
+    margin-left: 0;
+}
+
+.donations__item-active {
+    color: #FFFFFF;
+}
+
+.donations__description {
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet-width) {
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 40px;
+    }
+
+    @media (min-width: $desktop-width) {
+        width: 759px;
+    }
+}
+
+
+.donations__pointer {
+    position: absolute;
+
+}
+
+.donations__button {
+    font-family: "Rubik", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: lowercase;
+    background-color: #B19B69;
+    border-radius: 10px;
+    display: inline-block;
+    width: 268px;
+    height: 60px;
+    vertical-align: middle;
+    line-height: 60px;
+    background-image: url(../img/heart.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 60px;
+    margin-left: 26px;
+
+    @media (min-width: $tablet-width) {
+        margin-left: 0;
+        width: 198px;
+        height: 80px;
+        background-image: none;
+        line-height: 80px;
+    }
+}
+
+.donations__button-text {
+    @media (min-width: $tablet-width) {
+        display: none;
+    }
+}
