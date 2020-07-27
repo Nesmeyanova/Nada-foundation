@@ -14,6 +14,22 @@
     }
 }
 
+.card-needy__hidden {
+    display: none;
+}
+
+.card-needy__hidden-tab {
+    @media (min-width: $tablet-width) {
+        display: block;
+    }
+}
+
+.card-needy__hidden-desk {
+    @media (min-width: $desktop-width) {
+        display: block;
+    }
+}
+
 .card-needy__image {
     margin-top: -20px;
     margin-bottom: 20px;
